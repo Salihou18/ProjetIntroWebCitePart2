@@ -1,0 +1,125 @@
+header{
+    width: 100% ;
+    background-color: black;
+    margin-right: 30px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    /* margin-right: 30px; */
+    margin-bottom: 10px;
+    /* margin-left: 30px; */
+    padding-top: 10px;
+    background: linear-gradient(45deg, #ffffff 25%, #f3f3f3 25%, #f3f3f3 50%, #ffffff 50%, #ffffff 75%, #f3f3f3 75%, #f3f3f3);
+    background-size: 80px 80px; /* Taille du motif */
+   
+}
+
+li{
+    list-style:none; 
+    display: inline;
+    margin-right: 40px  
+ 
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: green;
+   
+}
+
+#hautdepage{
+    text-align: center;
+     
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    background-image: url('../images/imagebody.png');
+
+}
+
+.contenue
+{
+    background-color: #fafafa;
+    margin: 200px;
+    box-shadow: 10px 15px 20px rgba( 0 , 0 , 0 , .1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+
+.cntt
+{
+    background-color: rgba( 0 , 0 , 0 , .95);
+    padding: 50px;
+    outline: 3px dashed #998100;
+    outline-offset:-30px; 
+    text-align: center;
+}
+
+.header
+{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.jours
+{
+    color: #998100;
+    font-size: 30px;
+
+}
+
+.tlp
+{
+    font-size: 20px;
+}
+
+.cntf
+{
+    padding: 20px 0;
+    margin: 0 auto;
+    color: black;
+
+}
+
+form
+{
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+form p
+{
+    font-weight: 600;
+}
+
+.fld
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+input,select
+ {
+    pad: 10px 15px;
+ }
+
+ .btn
+ {
+    background-color: #998100;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    box-shadow: 7px 10px ;
+ }
+
+ footer{
+    width: 100% ;
+    background-color: black;
+    background: linear-gradient(45deg, #ffffff 25%, #f3f3f3 25%, #f3f3f3 50%, #ffffff 50%, #ffffff 75%, #f3f3f3 75%, #f3f3f3);
+    background-size: 70px 70px; /* Taille du motif */
+    text-align: center;
+}
