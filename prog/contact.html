@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="../styles/styleContacter.css">
+    <link rel="shortcut icon" type="image" href="../images/africa-food-logo-design-template-600nw-1303731694.webp">
+
+</head>
+
+<body>
+    <header>
+        <header>
+            <div>
+                <div id="nom-Restau">bienvenue chez africa food</div>
+                <nav>
+                    <ul id="hautdepage">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                        <li><a href="reserver.html">Reserver</a></li>
+                        <li><a href="pagedanimation.html">page d'animation de jeu</a></li>
+                        <li><a href="apropos.html">A propos</a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <pre>Vous pouvez remplir ce formulaire et un membre de notre équipe vous contactera  le plus tot possible.
+ Vous pouvez aussi nous joindre directement au +1(777)777-7777 ou venir au 385 Bastos Avenue.
+            </pre>
+            <form action="#" method="post">
+                <label for="prenom">votre prenom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="votre prenom.." required>
+
+                <label for="name">votre nom</label>
+                <input type="text" id="name" name="name" placeholder="votre nom.." required>
+
+                <div>
+                    <label for="naissance">Date de naissance</label>
+                    <input type="date" id="naissance" nom="naissance">
+                </div>
+
+                <label for="adresse">votre adresse</label>
+                <input type="text" id="adresse" name="adresse" placeholder="votre adresse.." required>
+
+                <label for="email">votre Email</label>
+                <input type="email" id="email" name="email" placeholder="votre Email.." required>
+                <fieldset>
+                    <!-- permet de creer des rectangles -->
+                    <legend>votre genre</legend>
+                    <!-- permet de creer un titre pour le rectangle -->
+                    <label for="femme">Femme</label>
+                    <input type="radio" name="genre" id="femme" />
+                    <label for="homme">Homme</label>
+                    <input type="radio" name="genre" id="homme" />
+                    <label for="autre">Autre</label>
+                    <input type="radio" name="genre" id="autre" />
+                </fieldset>
+                <fieldset>
+                    <legend>votre adresse </legend>
+                    <div>
+                        <label for="rue">Rue</label>
+                        <input type="text" name="rue" id="rue" placeholder="Entrez la rue">
+
+                    </div>
+                    <div>
+                        <label for="ville">Ville</label>
+                        <input type="text" name="ville" id="ville" placeholder="Entrez la ville">
+                    </div>
+                    <div>
+                        <label for="province">Province</label>
+                        <!-- la balise select permet de creer une liste deroulante -->
+                        <select name="province" id="province">
+                            <option value="choisir la province"></option>
+                            <!-- selected permet de selectionner une valeur par defaut dans une liste deroulante -->
+                            <!-- checked permet de cocher une valeur par defaut 
+                    dans une balise radio/checkbox -->
+                            <option selected value="Ontario">ON</option>
+                            <option value="Quebec">QC</option>
+                            <option value="Nouveau-Brunswick">NB</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Comment pouvons-nous vous aider...?"
+                    required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <nav>
+                <ul id="hautdepage">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="reserver.html">Reserver</a></li>
+                    <li><a href="pagedanimation.html">page d'animation de jeu</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+        <div id="liengit">
+            <li><a href="https://github.com/Salihou18/ProjetIntroProgWebCite.git">Lien vers le Github</a></li>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+header{
+    width: 100% ;
+    background-color: black;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    background: linear-gradient(45deg, #ffffff 25%, #f3f3f3 25%, #f3f3f3 50%, #ffffff 50%, #ffffff 75%, #f3f3f3 75%, #f3f3f3);
+    background-size: 80px 80px; /* Taille du motif */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px;
+}
+#hautdepage{
+    text-align: center;
+     
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    padding: 0px 30px ;
+    font-family: "Anta" , sans-serif;
+    font-weight: 800;
+}
+
+a{
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: orangered;
+    padding: 15px;
+    display: block;
+    float: left;
+}
+
+.hero-image {
+    background-image: url('https://fd8ce64fd5.cbaul-cdnwnd.com/37f7dcedc767734f3b8ed8a66fcb61de/200000020-b2913b2916/Awani_Hero_2.jpeg?ph=fd8ce64fd5'); /* Replace 'hero-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 10px 90px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+.hero-heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.hero-subheading {
+    font-size: 24px;
+}
+
+.container {
+    padding: 16px;
+    margin: 10px 90px
+  }
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: orangered;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: solid;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+.container-signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 90px;
+    padding: 5px;
+}
+
+footer{
+    width: 100% ;
+    background-color: black;
+    background: linear-gradient(45deg, #ffffff 25%, #f3f3f3 25%, #f3f3f3 50%, #ffffff 50%, #ffffff 75%, #f3f3f3 75%, #f3f3f3);
+    background-size: 80px 80px; /* Taille du motif */
+    margin: 30px 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {  /*CSS pour les telephones*/
+    .action_page{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-image>menu>.menu_row>.menu_column {
+        width: 15%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
