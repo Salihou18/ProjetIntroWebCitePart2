@@ -120,16 +120,67 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 576px) {  /*CSS pour les telephones*/
-    .action_page{
-        flex-direction: column;
-        justify-content: center;
+@media screen and (max-width: 1200px) {
+    .container, .container-signin {
+      margin: 10px 30px; /* Réduisez les marges */
+    }
+    
+    .hero-image {
+      margin: 10px 30px; /* Réduisez la marge */
+    }
+  
+    .overlay {
+      font-size: 20px; /* Réduisez la taille de la police */
+    }
+    
+    .hero-heading {
+      font-size: 36px; /* Réduisez la taille de la police */
+    }
+  
+    .hero-subheading {
+      font-size: 18px; /* Réduisez la taille de la police */
+    }
+  }
+
+  @media screen and (max-width: 892px) {
+    header{
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 
-    .hero-image>menu>.menu_row>.menu_column {
-        width: 15%;
-        justify-content: center;
-        flex-direction: column;
+    #hautdepage li {
+        padding: 0px 15px;
+        font-size: 14px;
     }
 
-}
+    /* Ajustez la taille de la police pour les titres */
+    .hero-heading {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+    
+    .container, .container-signin {
+      margin: 10px 15px; /* Réduisez davantage les marges */
+    }
+  
+    .hero-image {
+      margin: 10px 15px; /* Réduisez davantage la marge */
+      height: 300px; /* Ajustez la hauteur de l'image */
+    }
+  
+    .overlay {
+      font-size: 16px; /* Réduisez davantage la taille de la police */
+    }
+    
+    .hero-heading {
+      font-size: 24px; /* Réduisez davantage la taille de la police */
+    }
+  
+    .hero-subheading {
+      font-size: 14px; /* Réduisez davantage la taille de la police */
+    }
+  }
