@@ -1,3 +1,4 @@
+
 header{
     width: 100% ;
     background-color: black;
@@ -81,6 +82,7 @@ a{
     padding: 10px;
     flex: 1;
     justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 
 #menu_col h2{
@@ -89,7 +91,12 @@ a{
     text-align: center;
     padding: 2px;
     font-family: cursive;
+    animation: slideIn 0.5s ease;
 }
+#menu_col:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille lors du survol */
+}
+
 .box>#image{
     width: 150px;
     height: 150px;
@@ -111,6 +118,10 @@ a{
     text-align: center;
     margin: 5px;
 }
+.box:hover > #image {
+    transform: scale(1.5); /* Zoom de 10% lors du survol */
+    transition: transform 0.3s ease; /* Transition fluide */
+}
 
 footer{
     width: 100% ;
@@ -121,16 +132,57 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 576px) {  /*CSS pour les telephones*/
-    .hero-image, .hero-image>menu {
-        flex-direction: column;
-        justify-content: center;
+/* pour les ecrans qui on moins de 992px */
+@media screen and (max-width: 992px) {  /*CSS pour les telephones*/
+    header{
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 
-    .hero-image>menu>.menu_row>.menu_column {
-        width: 15%;
-        justify-content: center;
-        flex-direction: column;
+    #hautdepage li {
+        padding: 0px 15px;
+        font-size: 14px;
     }
 
+    /* Ajustez la taille de la police pour les titres */
+    .hero-heading {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    #menu_row {
+        flex-direction: column;
+      }
+      
+      #menu_col {
+        width: 100%;
+        margin: 10px 0;
+      }
+      
+      .box {
+        margin: 10px 0;
+      }
+      
+      #menu_col h2 {
+        font-size: 24px;
+      }
 }
+
+@media screen and (max-width: 1200px) {
+    #menu_col h2 {
+      font-size: 20px;
+    }
+    
+    .box {
+      margin: 5px;
+    }
+    
+    .box>#image {
+      width: 100px;
+      height: 100px;
+    }
+  }
