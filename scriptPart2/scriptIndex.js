@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //recuperer le parent div pour pouvoir selectionner les images a l'interieur de celui-ci
 
 
-    const recup = document.querySelector("#les-images")
+    // const recup = document.querySelector("#les-images")
 
     const imgList=document.querySelectorAll("img")
 
