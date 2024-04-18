@@ -1,0 +1,99 @@
+
+header{
+    width: 100% ;
+    background-color: black;
+    margin-right: 30px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    background: linear-gradient(45deg, #ffffff 25%, #f3f3f3 25%, #f3f3f3 50%, #ffffff 50%, #ffffff 75%, #f3f3f3 75%, #f3f3f3);
+    background-size: 80px 80px; /* Taille du motif */
+   
+}
+
+li{
+    list-style:none; 
+    display: inline;
+    margin-right: 40px  
+ 
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: green;
+   
+}
+
+#hautdepage{
+    text-align: center;
+     
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.jeu_infos
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container
+{
+    height: 400px;
+    width: 500px;
+    border:1PX solid wheat;
+    cursor: crosshair;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+    box-shadow: 0 0 5px rgba(0,0,0,0 );
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#Cible
+{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animeCible 10s infinite;
+}
+
+button
+{
+    padding: 10ps 20px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    border: 0;
+    color: blue;
+    cursor: pointer;
+}
+
+footer{
+    width: 100% ;
+    background-color: black;
+    background: linear-gradient(45deg, #ffffff 25%, #f3f3f3 25%, #f3f3f3 50%, #ffffff 50%, #ffffff 75%, #f3f3f3 75%, #f3f3f3);
+    background-size: 70px 70px; /* Taille du motif */
+    text-align: center;
+}
+
+@keyframes animeCible
+{
+    to {
+        transform:translate(-200px) rotate(90deg);
+    }
+}
